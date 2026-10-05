@@ -73,5 +73,5 @@ File `akademik.sql` (berisi tabel `mahasiswa` dan `prodi`, lengkap dengan relasi
 ```
   ERROR 1062 (23000): Duplicate entry 'bagas@kampus.ac.id' for key 'email'
 ```
-- **Penyebab:** Query `INSERT` pada `Tugas3.sql` dijalankan dua kali pada database yang sama. Karena kolom `email` sudah diberi constraint `UNIQUE` (modifikasi #3), MySQL menolak baris baru yang nilainya sama dengan data yang sudah ada.
-- **Perbaikan:** Sebelum menjalankan ulang `Tugas3.sql`, pastikan tabel `mahasiswa` dikosongkan dulu (`TRUNCATE TABLE mahasiswa;` lalu import ulang data awal), atau gunakan nilai email yang berbeda setiap kali insert. Ini juga membuktikan bahwa constraint validasi yang ditambahkan sudah bekerja sesuai tujuannya (mencegah data duplikat).
+- **Penyebab:** Query `INSERT` pada `akademik.sql` dijalankan dua kali pada database yang sama. Karena kolom `email` sudah diberi constraint `UNIQUE` (modifikasi #3), MySQL menolak baris baru yang nilainya sama dengan data yang sudah ada.
+- **Perbaikan:** Sebelum menjalankan ulang `akademik.sql`, pastikan tabel `mahasiswa` dikosongkan dulu (`TRUNCATE TABLE mahasiswa;` lalu import ulang data awal), atau gunakan nilai email yang berbeda setiap kali insert. Ini juga membuktikan bahwa constraint validasi yang ditambahkan sudah bekerja sesuai tujuannya (mencegah data duplikat).
