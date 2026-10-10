@@ -11,7 +11,7 @@ Mata Kuliah: Prak. Pemrograman Berbasis Web
 Aplikasi web berbasis PHP diintegrasikan dengan database `akademik2` melalui server lokal Laragon. Alur eksekusi dilakukan via browser melalui URL `http://localhost:8080/...` dengan urutan: `form.php` (input data) ➡️ `simpan.php` (proses simpan ke database) ➡️ `data.php` (menampilkan data dari database).
 
 ### 2. Modifikasi yang Dilakukan
-1. **Field & Validasi Baru** — Menambahkan pembatasan input IPK (`min="0.00"`, `max="4.00"`, `step="0.01"`) pada `form.php` dan validasi sisi server pada `simpan.php`.
+1. **Field & Validasi Baru** — Menambahkan pembatasan input IPK pada `form.php` dan validasi sisi server pada `simpan.php`.
 2. **Kondisi Baru (Predikat IPK)** — Menambahkan logika pengkondisian (`if-else`) pada `data.php` untuk menampilkan status predikat kelulusan berdasarkan nilai IPK (misal: IPK ≥ 3.50 menampilkan predikat "Cumlaude").
 
 ### 3. Penjelasan 5 Bagian Kode Terpenting
