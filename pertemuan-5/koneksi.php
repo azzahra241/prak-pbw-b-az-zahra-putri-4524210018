@@ -22,5 +22,5 @@ if (!mysqli_select_db($koneksi, $dbname)) {
 
 mysqli_set_charset($koneksi, 'utf8mb4');
 
-echo "koneksi ke server mysql berhasil! \n";
+echo "koneksi ke server mysql berhasil! <br><br>";
 ?>
