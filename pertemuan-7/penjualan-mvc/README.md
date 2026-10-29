@@ -29,7 +29,6 @@ Aplikasi web CRUD ini dikembangkan menggunakan arsitektur **MVC (Model-View-Cont
 * Menampilkan tabel daftar produk lengkap dengan tombol aksi dan informasi harga yang terformat rapi.
 ![Screenshot Halaman Utama](images/halaman-utama.png)
 
----
 #### Form Tambah & Edit Produk
 * Menampilkan antarmuka form interaktif untuk menambah data baru serta memperbarui data produk yang sudah ada di database.
 * Form Tambah Produk:
